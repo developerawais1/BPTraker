@@ -24,6 +24,7 @@ class OnBoardingVC: UIViewController {
         self.navigationController?.navigationBar.isHidden = true
         pageControl.numberOfPages = titleArray.count
         pageControl.updateIndicatorImages()
+        print("saqlain jamil")
     }
     
     override func viewDidAppear(_ animated: Bool) {
