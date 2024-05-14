@@ -24,7 +24,9 @@ class OnBoardingVC: UIViewController {
         self.navigationController?.navigationBar.isHidden = true
         pageControl.numberOfPages = titleArray.count
         pageControl.updateIndicatorImages()
-        print("saqlain jamil")
+        if UserDefaults.standard.bool(forKey: "isOnboardingCompleted") {
+            goToHomeScreen()
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -32,12 +34,26 @@ class OnBoardingVC: UIViewController {
         showItem(at: 0)
     }
     
-    //MARK: - Methods
+    //MARK: - homeScreen
     private func goToAccountInfo() {
+//        let tabBarController = UIStoryboard(name: Storyboards.tabBar, bundle: Bundle.main).instantiateViewController(withIdentifier:                "TabBarController")
+//                tabBarController.modalPresentationStyle = .fullScreen
+//                present(tabBarController, animated: false, completion: nil)
+//                return
+//                let nextPage = min(pageControl.currentPage + 1, titleArray.count - 1)
+//                showItem(at: nextPage)
+//                pageControl.currentPage = nextPage
+//                pageControl.updateIndicatorImages()
+        UserDefaults.standard.set(true, forKey: "isOnboardingCompleted")
         let vc = UIStoryboard(name: Storyboards.onBoarding, bundle: nil).instantiateViewController(withIdentifier: "AccountInfoVC")
         navigationController?.pushViewController(vc, animated: true)
     }
     
+    private func goToHomeScreen() {
+        let tabBarController = UIStoryboard(name: Storyboards.tabBar, bundle: Bundle.main).instantiateViewController(withIdentifier: "TabBarController")
+        tabBarController.modalPresentationStyle = .fullScreen
+        present(tabBarController, animated: false, completion: nil)
+    }
     private func goToNextItem() {
         let nextPage = min(pageControl.currentPage + 1, titleArray.count - 1)
         showItem(at: nextPage)
@@ -102,5 +118,3 @@ extension OnBoardingVC: UICollectionViewDelegate, UICollectionViewDataSource, UI
         return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
     }
 }
-
-

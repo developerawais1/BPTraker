@@ -53,7 +53,7 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
             cell?.homeCellNameLbl.text = "Weight & BMI"
             cell?.homeCellCountLbl.text = "190"
             cell?.homeCellLbl.text = "mmol/L"
-            cell?.homeCellImage.image = UIImage(named: "Weight&BMI")
+            cell?.homeCellImage.image = UIImage(named: "StartTwo")
         default:
             break
         }

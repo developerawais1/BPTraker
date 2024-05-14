@@ -30,7 +30,7 @@ class SettingsVC: UIViewController {
 //MARK: - Extension TableView
 extension SettingsVC: UITableViewDelegate ,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 5
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 90
@@ -53,6 +53,10 @@ extension SettingsVC: UITableViewDelegate ,UITableViewDataSource{
             cell?.settingsImage.image = UIImage(named: "Reminder")
             cell?.forwardImage.image = UIImage(named: "Notification")
         case 3:
+            cell?.nameLbl.text = "ADD Widgets"
+            cell?.settingsImage.image = UIImage(named: "widgets")
+            cell?.forwardImage.image = UIImage(named: "Forward")
+        case 4:
             cell?.nameLbl.text = "About Us"
             cell?.settingsImage.image = UIImage(named: "AboutUs")
             cell?.forwardImage.image = UIImage(named: "Forward")
@@ -68,7 +72,7 @@ extension SettingsVC: UITableViewDelegate ,UITableViewDataSource{
         case 1:
             let vc = UIStoryboard(name: Storyboards.reminder, bundle: nil).instantiateViewController(withIdentifier: "ReminderVC")
             navigationController?.pushViewController(vc, animated: true)
-        case 3:
+        case 4:
             let vc = UIStoryboard(name: Storyboards.tabBar, bundle: nil).instantiateViewController(withIdentifier: "HistoryVC")
             navigationController?.pushViewController(vc, animated: true)
         default:

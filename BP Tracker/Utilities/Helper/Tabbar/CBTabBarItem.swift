@@ -56,7 +56,7 @@ public class CBTabBarButton: UIControl {
         guard let image = maybeImage else {
             return nil
         }
-        return image.renderingMode == .automatic ? image.withRenderingMode(.alwaysTemplate) : image
+        return image.renderingMode == .alwaysOriginal ? image.withRenderingMode(.alwaysOriginal) : image
     }
     
     public var item: UITabBarItem? {

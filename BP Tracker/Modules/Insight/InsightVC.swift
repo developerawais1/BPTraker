@@ -51,7 +51,7 @@ extension InsightVC: UICollectionViewDelegate, UICollectionViewDataSource, UICol
         case 3:
             cell?.insightNameLbl.text = "Weight & BMI"
             cell?.insightCount.text = "08 Insight"
-            cell?.insightImage.image = UIImage(named: "Weight&BMI")
+            cell?.insightImage.image = UIImage(named: "StartTwo")
         default:
             break
         }
