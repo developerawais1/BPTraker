@@ -66,8 +66,17 @@ extension InsightVC: UICollectionViewDelegate, UICollectionViewDataSource, UICol
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         switch indexPath.row {
+        case 0:
+            let vc = UIStoryboard(name: Storyboards.bloodInsight, bundle: nil).instantiateViewController(withIdentifier: "bloodInsight")
+            navigationController?.pushViewController(vc, animated: true)
+        case 1:
+            let vc = UIStoryboard(name: Storyboards.bloodsugar, bundle: nil).instantiateViewController(withIdentifier: "bloodsugar")
+            navigationController?.pushViewController(vc, animated: true)
         case 2:
             let vc = UIStoryboard(name: Storyboards.insight, bundle: nil).instantiateViewController(withIdentifier: "HeartInsightVC")
+            navigationController?.pushViewController(vc, animated: true)
+        case 3:
+            let vc = UIStoryboard(name: Storyboards.weight, bundle: nil).instantiateViewController(withIdentifier: "weight")
             navigationController?.pushViewController(vc, animated: true)
         default:
             break

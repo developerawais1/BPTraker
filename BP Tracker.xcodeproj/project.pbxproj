@@ -12,6 +12,13 @@
 		77A389292BE7BFFB002C9A95 /* Insight.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77A389282BE7BFFB002C9A95 /* Insight.storyboard */; };
 		77A3892C2BE7C046002C9A95 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A3892B2BE7C046002C9A95 /* Constants.swift */; };
 		77A3892F2BE7C29C002C9A95 /* UIPageControl+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A3892E2BE7C29C002C9A95 /* UIPageControl+Extension.swift */; };
+		CEB319222BFBAA070041B488 /* HRPassDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB319212BFBAA070041B488 /* HRPassDataViewController.swift */; };
+		CEB319242BFD0C4F0041B488 /* bloodInsightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB319232BFD0C4F0041B488 /* bloodInsightVC.swift */; };
+		CEB319282BFD103E0041B488 /* bloodInsight.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB319272BFD103E0041B488 /* bloodInsight.storyboard */; };
+		CEB3192A2BFD15D60041B488 /* bloodsugar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB319292BFD15D60041B488 /* bloodsugar.storyboard */; };
+		CEB3192E2BFD17940041B488 /* bloodsugarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3192D2BFD17940041B488 /* bloodsugarVC.swift */; };
+		CEB319302BFD183F0041B488 /* weight.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB3192F2BFD183F0041B488 /* weight.storyboard */; };
+		CEB319322BFD18720041B488 /* weightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB319312BFD18720041B488 /* weightVC.swift */; };
 		E0A5F5862BD79B7100413011 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A5F5842BD79B7100413011 /* HistoryTableViewCell.swift */; };
 		E0A5F5872BD79B7100413011 /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0A5F5852BD79B7100413011 /* HistoryTableViewCell.xib */; };
 		E0A5F58B2BD79C9200413011 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A5F58A2BD79C9200413011 /* HistoryVC.swift */; };
@@ -53,6 +60,13 @@
 		77A389282BE7BFFB002C9A95 /* Insight.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Insight.storyboard; sourceTree = "<group>"; };
 		77A3892B2BE7C046002C9A95 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		77A3892E2BE7C29C002C9A95 /* UIPageControl+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPageControl+Extension.swift"; sourceTree = "<group>"; };
+		CEB319212BFBAA070041B488 /* HRPassDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRPassDataViewController.swift; sourceTree = "<group>"; };
+		CEB319232BFD0C4F0041B488 /* bloodInsightVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bloodInsightVC.swift; sourceTree = "<group>"; };
+		CEB319272BFD103E0041B488 /* bloodInsight.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = bloodInsight.storyboard; sourceTree = "<group>"; };
+		CEB319292BFD15D60041B488 /* bloodsugar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = bloodsugar.storyboard; sourceTree = "<group>"; };
+		CEB3192D2BFD17940041B488 /* bloodsugarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bloodsugarVC.swift; sourceTree = "<group>"; };
+		CEB3192F2BFD183F0041B488 /* weight.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = weight.storyboard; sourceTree = "<group>"; };
+		CEB319312BFD18720041B488 /* weightVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weightVC.swift; sourceTree = "<group>"; };
 		E0A5F5842BD79B7100413011 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		E0A5F5852BD79B7100413011 /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
 		E0A5F58A2BD79C9200413011 /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
@@ -148,6 +162,8 @@
 				E0A913D12BD665CC00EB0AEC /* Cells */,
 				E0A913CF2BD664E600EB0AEC /* InsightVC.swift */,
 				E0A9C3BA2BD8DE5700C3D49C /* HeartInsightVC.swift */,
+				CEB319232BFD0C4F0041B488 /* bloodInsightVC.swift */,
+				CEB3192D2BFD17940041B488 /* bloodsugarVC.swift */,
 			);
 			path = Insight;
 			sourceTree = "<group>";
@@ -248,6 +264,8 @@
 			children = (
 				E0A913D22BD6661900EB0AEC /* InsightCollectionViewCell.swift */,
 				E0A913D32BD6661900EB0AEC /* InsightCollectionViewCell.xib */,
+				CEB319212BFBAA070041B488 /* HRPassDataViewController.swift */,
+				CEB319312BFD18720041B488 /* weightVC.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -267,9 +285,12 @@
 			children = (
 				77A3891F2BE6B9BA002C9A95 /* Onboarding.storyboard */,
 				E0F719772BD0F0C600D31F52 /* Tabbar.storyboard */,
-				77A389282BE7BFFB002C9A95 /* Insight.storyboard */,
 				77A389262BE7BFBE002C9A95 /* Reminder.storyboard */,
 				E0F7197C2BD0F0C900D31F52 /* LaunchScreen.storyboard */,
+				77A389282BE7BFFB002C9A95 /* Insight.storyboard */,
+				CEB319272BFD103E0041B488 /* bloodInsight.storyboard */,
+				CEB319292BFD15D60041B488 /* bloodsugar.storyboard */,
+				CEB3192F2BFD183F0041B488 /* weight.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -401,10 +422,13 @@
 				E0F7197E2BD0F0C900D31F52 /* LaunchScreen.storyboard in Resources */,
 				E0F7197B2BD0F0C900D31F52 /* Assets.xcassets in Resources */,
 				77A389292BE7BFFB002C9A95 /* Insight.storyboard in Resources */,
+				CEB319302BFD183F0041B488 /* weight.storyboard in Resources */,
 				E0A913D52BD6661900EB0AEC /* InsightCollectionViewCell.xib in Resources */,
 				E0A5F5932BD7D60B00413011 /* HomeCollectionViewCell.xib in Resources */,
 				E0A913CE2BD647DD00EB0AEC /* SettingsTableViewCell.xib in Resources */,
+				CEB3192A2BFD15D60041B488 /* bloodsugar.storyboard in Resources */,
 				E0F719792BD0F0C600D31F52 /* Tabbar.storyboard in Resources */,
+				CEB319282BFD103E0041B488 /* bloodInsight.storyboard in Resources */,
 				77A389202BE6B9BA002C9A95 /* Onboarding.storyboard in Resources */,
 				E0A5F5872BD79B7100413011 /* HistoryTableViewCell.xib in Resources */,
 				E0A913DB2BD69BB300EB0AEC /* ReminderTableViewCell.xib in Resources */,
@@ -420,7 +444,9 @@
 			files = (
 				E0A9C3BB2BD8DE5700C3D49C /* HeartInsightVC.swift in Sources */,
 				E0B7BE642BD29DDF00FA1D36 /* BubbleTabBarController.swift in Sources */,
+				CEB3192E2BFD17940041B488 /* bloodsugarVC.swift in Sources */,
 				E0B7BE662BD2A82000FA1D36 /* HomeVC.swift in Sources */,
+				CEB319222BFBAA070041B488 /* HRPassDataViewController.swift in Sources */,
 				E0A913DA2BD69BB300EB0AEC /* ReminderTableViewCell.swift in Sources */,
 				E0B7BE582BD1418700FA1D36 /* AccountInfoVC.swift in Sources */,
 				E0F7198A2BD1029E00D31F52 /* OnBoardingCVCell.swift in Sources */,
@@ -434,9 +460,11 @@
 				E0B7BE5C2BD2425500FA1D36 /* UIViewController+Extension.swift in Sources */,
 				E0A5F58F2BD7C97F00413011 /* CircularCollectionViewLayout.swift in Sources */,
 				E0B7BE5E2BD2553C00FA1D36 /* MeasurementVC.swift in Sources */,
+				CEB319322BFD18720041B488 /* weightVC.swift in Sources */,
 				E0F719882BD0F1B700D31F52 /* UIView+Extension.swift in Sources */,
 				E0A913CD2BD647DD00EB0AEC /* SettingsTableViewCell.swift in Sources */,
 				E0F719742BD0F0C600D31F52 /* SceneDelegate.swift in Sources */,
+				CEB319242BFD0C4F0041B488 /* bloodInsightVC.swift in Sources */,
 				E0B7BE622BD29CEE00FA1D36 /* CBTabBarItem.swift in Sources */,
 				E0F7198C2BD102C100D31F52 /* OnBoardingVC.swift in Sources */,
 				E0A913D42BD6661900EB0AEC /* InsightCollectionViewCell.swift in Sources */,

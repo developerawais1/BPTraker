@@ -8,7 +8,6 @@
 import UIKit
 
 class InsightCollectionViewCell: UICollectionViewCell {
-
     @IBOutlet weak var insightImage: UIImageView!
     @IBOutlet weak var insightNameLbl: UILabel!
     @IBOutlet weak var insightCount: UILabel!
