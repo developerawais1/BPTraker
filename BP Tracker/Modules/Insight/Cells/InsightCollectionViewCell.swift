@@ -12,7 +12,12 @@ class InsightCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var insightNameLbl: UILabel!
     @IBOutlet weak var insightCount: UILabel!
     
+    @IBOutlet var firstMainView: UIView!
+    @IBOutlet var mainView: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
+        mainView.applyShadow()
+       firstMainView.applyShadow()
     }
+    
 }

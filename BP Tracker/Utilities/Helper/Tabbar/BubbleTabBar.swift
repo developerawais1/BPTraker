@@ -149,7 +149,7 @@ open class BubbleTabBar: UITabBar {
     }
     
     @objc private func btnPressed(sender: CBTabBarButton) {
-        guard let index = buttons.index(of: sender),
+        guard let index = buttons.firstIndex(of: sender),
             index != NSNotFound,
             let item = items?[index] else {
                 return

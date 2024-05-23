@@ -38,7 +38,7 @@ extension ReminderVC: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "ReminderTableViewCell",for: indexPath) as? ReminderTableViewCell? else {
             fatalError()
         }
-        cell?.layer.cornerRadius = 10
+        cell?.layer.cornerRadius = 20
         return cell ?? UITableViewCell()
     }
 }

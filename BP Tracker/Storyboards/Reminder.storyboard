@@ -62,7 +62,7 @@
                                                 <color key="backgroundColor" name="AppBGColour"/>
                                             </tableView>
                                         </subviews>
-                                        <color key="backgroundColor" name="AppBGColour"/>
+                                        <color key="backgroundColor" red="0.90588235294117647" green="0.90588235294117647" blue="0.90588235294117647" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="heh-I1-X4H" firstAttribute="top" secondItem="HKa-DX-Mcc" secondAttribute="top" constant="-260" id="0l0-4v-534"/>
                                             <constraint firstItem="mQr-OD-Zg0" firstAttribute="leading" secondItem="HKa-DX-Mcc" secondAttribute="leading" constant="30" id="28L-VK-ufb"/>
@@ -109,7 +109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W7A-UG-3qP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-938" y="3568"/>
+            <point key="canvasLocation" x="-1367" y="3399"/>
         </scene>
     </scenes>
     <resources>

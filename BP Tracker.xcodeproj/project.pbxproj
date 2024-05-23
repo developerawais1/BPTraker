@@ -161,9 +161,9 @@
 			children = (
 				E0A913D12BD665CC00EB0AEC /* Cells */,
 				E0A913CF2BD664E600EB0AEC /* InsightVC.swift */,
-				E0A9C3BA2BD8DE5700C3D49C /* HeartInsightVC.swift */,
 				CEB319232BFD0C4F0041B488 /* bloodInsightVC.swift */,
 				CEB3192D2BFD17940041B488 /* bloodsugarVC.swift */,
+				CEB319312BFD18720041B488 /* weightVC.swift */,
 			);
 			path = Insight;
 			sourceTree = "<group>";
@@ -265,7 +265,6 @@
 				E0A913D22BD6661900EB0AEC /* InsightCollectionViewCell.swift */,
 				E0A913D32BD6661900EB0AEC /* InsightCollectionViewCell.xib */,
 				CEB319212BFBAA070041B488 /* HRPassDataViewController.swift */,
-				CEB319312BFD18720041B488 /* weightVC.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -274,6 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				E0F719872BD0F1B700D31F52 /* UIView+Extension.swift */,
+				E0A9C3BA2BD8DE5700C3D49C /* HeartInsightVC.swift */,
 				E0B7BE5B2BD2425500FA1D36 /* UIViewController+Extension.swift */,
 				77A3892E2BE7C29C002C9A95 /* UIPageControl+Extension.swift */,
 			);
