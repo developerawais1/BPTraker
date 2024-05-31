@@ -10,7 +10,7 @@ import UIKit
 
 struct ImageHelper {
     static let imgOne = UIImage(named: "StartOne")
-    static let imgTwo = UIImage(named: "StartTwo")
+    static let imgTwo = UIImage(named: "weight")
     static let imgThree = UIImage(named: "StartThree")
 
     static let page = UIImage(named: "PagerLight")
