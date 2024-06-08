@@ -16,4 +16,7 @@ struct Storyboards {
     static let bloodsugar = "bloodsugar"
     static let reminder = "Reminder"
     static let weight = "weight"
+    static let addwidgets = "addwidgets"
+    static let SettingsVC = "SettingsVC"
 }
+

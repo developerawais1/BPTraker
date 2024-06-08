@@ -18,6 +18,7 @@ class InsightCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         mainView.applyShadow()
        firstMainView.applyShadow()
+       
     }
     
 }

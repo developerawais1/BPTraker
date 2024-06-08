@@ -15,6 +15,11 @@
 		CE6BFDF42C04ADAA00A046EC /* HeartInsightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6BFDF22C04ADAA00A046EC /* HeartInsightTableViewCell.swift */; };
 		CE6BFDF52C04ADAA00A046EC /* HeartInsightTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE6BFDF32C04ADAA00A046EC /* HeartInsightTableViewCell.xib */; };
 		CEB319222BFBAA070041B488 /* HRPassDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB319212BFBAA070041B488 /* HRPassDataViewController.swift */; };
+		CEF1AE932C131B3100AA0D7C /* addwidgets.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF1AE922C131B3100AA0D7C /* addwidgets.storyboard */; };
+		CEF1AE972C131C3600AA0D7C /* addwidgetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AE962C131C3600AA0D7C /* addwidgetsViewController.swift */; };
+		CEF1AE9A2C14827300AA0D7C /* widgetsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AE982C14827300AA0D7C /* widgetsCollectionViewCell.swift */; };
+		CEF1AE9B2C14827300AA0D7C /* widgetsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF1AE992C14827300AA0D7C /* widgetsCollectionViewCell.xib */; };
+		CEF1AE9F2C14A7F100AA0D7C /* WidgetKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AE9E2C14A7F100AA0D7C /* WidgetKit.swift */; };
 		E0A5F5862BD79B7100413011 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A5F5842BD79B7100413011 /* HistoryTableViewCell.swift */; };
 		E0A5F5872BD79B7100413011 /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0A5F5852BD79B7100413011 /* HistoryTableViewCell.xib */; };
 		E0A5F58B2BD79C9200413011 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A5F58A2BD79C9200413011 /* HistoryVC.swift */; };
@@ -58,7 +63,13 @@
 		77A3892E2BE7C29C002C9A95 /* UIPageControl+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPageControl+Extension.swift"; sourceTree = "<group>"; };
 		CE6BFDF22C04ADAA00A046EC /* HeartInsightTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartInsightTableViewCell.swift; sourceTree = "<group>"; };
 		CE6BFDF32C04ADAA00A046EC /* HeartInsightTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeartInsightTableViewCell.xib; sourceTree = "<group>"; };
+		CEA7A3F62C0E2D9D003A7858 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		CEB319212BFBAA070041B488 /* HRPassDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRPassDataViewController.swift; sourceTree = "<group>"; };
+		CEF1AE922C131B3100AA0D7C /* addwidgets.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = addwidgets.storyboard; sourceTree = "<group>"; };
+		CEF1AE962C131C3600AA0D7C /* addwidgetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addwidgetsViewController.swift; sourceTree = "<group>"; };
+		CEF1AE982C14827300AA0D7C /* widgetsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = widgetsCollectionViewCell.swift; sourceTree = "<group>"; };
+		CEF1AE992C14827300AA0D7C /* widgetsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = widgetsCollectionViewCell.xib; sourceTree = "<group>"; };
+		CEF1AE9E2C14A7F100AA0D7C /* WidgetKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetKit.swift; sourceTree = "<group>"; };
 		E0A5F5842BD79B7100413011 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		E0A5F5852BD79B7100413011 /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
 		E0A5F58A2BD79C9200413011 /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
@@ -162,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				E0A913C62BD63F5800EB0AEC /* SettingsVC.swift */,
+				CEF1AE962C131C3600AA0D7C /* addwidgetsViewController.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -222,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				77A3892B2BE7C046002C9A95 /* Constants.swift */,
+				CEF1AE9E2C14A7F100AA0D7C /* WidgetKit.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -256,6 +269,8 @@
 				CE6BFDF32C04ADAA00A046EC /* HeartInsightTableViewCell.xib */,
 				E0A913D22BD6661900EB0AEC /* InsightCollectionViewCell.swift */,
 				E0A913D32BD6661900EB0AEC /* InsightCollectionViewCell.xib */,
+				CEF1AE982C14827300AA0D7C /* widgetsCollectionViewCell.swift */,
+				CEF1AE992C14827300AA0D7C /* widgetsCollectionViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -279,6 +294,7 @@
 				77A389262BE7BFBE002C9A95 /* Reminder.storyboard */,
 				E0F7197C2BD0F0C900D31F52 /* LaunchScreen.storyboard */,
 				77A389282BE7BFFB002C9A95 /* Insight.storyboard */,
+				CEF1AE922C131B3100AA0D7C /* addwidgets.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -323,6 +339,7 @@
 		E0F719652BD0F0C600D31F52 = {
 			isa = PBXGroup;
 			children = (
+				CEA7A3F62C0E2D9D003A7858 /* MyPlayground.playground */,
 				E0F719702BD0F0C600D31F52 /* BP Tracker */,
 				E0F7196F2BD0F0C600D31F52 /* Products */,
 			);
@@ -416,6 +433,8 @@
 				CE6BFDF52C04ADAA00A046EC /* HeartInsightTableViewCell.xib in Resources */,
 				E0F719792BD0F0C600D31F52 /* Tabbar.storyboard in Resources */,
 				77A389202BE6B9BA002C9A95 /* Onboarding.storyboard in Resources */,
+				CEF1AE9B2C14827300AA0D7C /* widgetsCollectionViewCell.xib in Resources */,
+				CEF1AE932C131B3100AA0D7C /* addwidgets.storyboard in Resources */,
 				E0A5F5872BD79B7100413011 /* HistoryTableViewCell.xib in Resources */,
 				E0A913DB2BD69BB300EB0AEC /* ReminderTableViewCell.xib in Resources */,
 			);
@@ -450,12 +469,15 @@
 				E0A913CD2BD647DD00EB0AEC /* SettingsTableViewCell.swift in Sources */,
 				E0F719742BD0F0C600D31F52 /* SceneDelegate.swift in Sources */,
 				E0B7BE622BD29CEE00FA1D36 /* CBTabBarItem.swift in Sources */,
+				CEF1AE9F2C14A7F100AA0D7C /* WidgetKit.swift in Sources */,
+				CEF1AE972C131C3600AA0D7C /* addwidgetsViewController.swift in Sources */,
 				E0F7198C2BD102C100D31F52 /* OnBoardingVC.swift in Sources */,
 				E0A913D42BD6661900EB0AEC /* InsightCollectionViewCell.swift in Sources */,
 				E0F7198E2BD1062D00D31F52 /* ImageHelper.swift in Sources */,
 				E0A5F58B2BD79C9200413011 /* HistoryVC.swift in Sources */,
 				E0A913DD2BD69ECC00EB0AEC /* ReminderVC.swift in Sources */,
 				E0A913C72BD63F5800EB0AEC /* SettingsVC.swift in Sources */,
+				CEF1AE9A2C14827300AA0D7C /* widgetsCollectionViewCell.swift in Sources */,
 				E0A5F5922BD7D60B00413011 /* HomeCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

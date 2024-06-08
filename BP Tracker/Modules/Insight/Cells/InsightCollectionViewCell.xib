@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -91,7 +90,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" name="AppBGColour"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="DdT-mG-amb" firstAttribute="top" secondItem="7kM-yb-ixf" secondAttribute="top" constant="60" id="1fD-mI-67e"/>
                             <constraint firstItem="DdT-mG-amb" firstAttribute="leading" secondItem="7kM-yb-ixf" secondAttribute="leading" constant="10" id="8oc-fJ-QM5"/>
@@ -112,9 +111,9 @@
             </constraints>
             <size key="customSize" width="293" height="321"/>
             <connections>
-                <outlet property="firstMainView" destination="DdT-mG-amb" id="HNq-AX-nP3"/>
-                <outlet property="insightCount" destination="LM8-1c-gFJ" id="bkg-Xm-h9j"/>
-                <outlet property="insightImage" destination="d3K-98-VBR" id="XAz-ja-t3m"/>
+                <outlet property="firstMainView" destination="DdT-mG-amb" id="l3O-el-uUs"/>
+                <outlet property="insightCount" destination="HOK-3i-AYg" id="JJc-Lg-wcr"/>
+                <outlet property="insightImage" destination="d3K-98-VBR" id="NFR-BU-hy2"/>
                 <outlet property="insightNameLbl" destination="HOK-3i-AYg" id="UI1-AE-NBS"/>
                 <outlet property="mainView" destination="eSF-yc-AbG" id="tND-CA-qKD"/>
             </connections>
@@ -124,8 +123,5 @@
     <resources>
         <image name="BloodPressure" width="32" height="32"/>
         <image name="Group" width="122.5" height="122"/>
-        <namedColor name="AppBGColour">
-            <color red="0.96100002527236938" green="0.96100002527236938" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
     </resources>
 </document>

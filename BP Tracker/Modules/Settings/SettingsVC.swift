@@ -56,6 +56,7 @@ extension SettingsVC: UITableViewDelegate ,UITableViewDataSource{
             cell?.nameLbl.text = "ADD Widgets"
             cell?.settingsImage.image = UIImage(named: "widgets")
             cell?.forwardImage.image = UIImage(named: "Forward")
+            
         case 4:
             cell?.nameLbl.text = "About Us"
             cell?.settingsImage.image = UIImage(named: "AboutUs")
@@ -72,6 +73,9 @@ extension SettingsVC: UITableViewDelegate ,UITableViewDataSource{
         case 1:
             let vc = UIStoryboard(name: Storyboards.reminder, bundle: nil).instantiateViewController(withIdentifier: "ReminderVC")
             navigationController?.pushViewController(vc, animated: true)
+        case 3:
+            let vc = UIStoryboard(name: Storyboards.addwidgets, bundle: nil).instantiateViewController(withIdentifier: "addwidgetsViewController")
+            navigationController?.pushViewController(vc, animated: true)
         case 4:
             let vc = UIStoryboard(name: Storyboards.tabBar, bundle: nil).instantiateViewController(withIdentifier: "HistoryVC")
             navigationController?.pushViewController(vc, animated: true)
@@ -79,4 +83,6 @@ extension SettingsVC: UITableViewDelegate ,UITableViewDataSource{
             break
         }
     }
+
+    
 }

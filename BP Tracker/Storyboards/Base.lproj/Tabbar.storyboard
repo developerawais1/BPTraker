@@ -493,7 +493,7 @@
         <!--Setting-->
         <scene sceneID="hz9-rs-59K">
             <objects>
-                <viewController storyboardIdentifier="SettingsVC" id="RnD-OJ-oYB" customClass="SettingsVC" customModule="BP_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RnD-OJ-oYB" customClass="SettingsVC" customModule="BP_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y67-vq-NQJ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -752,13 +752,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6GD-dM-3D4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-938.16793893129773" y="4348.5915492957747"/>
+            <point key="canvasLocation" x="-938" y="3742"/>
         </scene>
     </scenes>
     <resources>
-        <image name="090922_07_home_1-" width="70" height="60"/>
-        <image name="Asset 12" width="17" height="17.5"/>
-        <image name="Asset 41" width="15.5" height="15.5"/>
+        <image name="090922_07_home_1-" width="47" height="47"/>
+        <image name="Asset 12" width="34" height="35"/>
+        <image name="Asset 41" width="31" height="31"/>
         <image name="BloodPressure" width="32" height="32"/>
         <image name="Group" width="122.5" height="122"/>
         <image name="HeartRate" width="51.5" height="38.5"/>
