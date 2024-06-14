@@ -14,12 +14,23 @@
 		77A3892F2BE7C29C002C9A95 /* UIPageControl+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A3892E2BE7C29C002C9A95 /* UIPageControl+Extension.swift */; };
 		CE6BFDF42C04ADAA00A046EC /* HeartInsightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6BFDF22C04ADAA00A046EC /* HeartInsightTableViewCell.swift */; };
 		CE6BFDF52C04ADAA00A046EC /* HeartInsightTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE6BFDF32C04ADAA00A046EC /* HeartInsightTableViewCell.xib */; };
+		CE8C2A042C1B7D1200ED25C8 /* UIViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8C2A032C1B7D1200ED25C8 /* UIViewRepresentable.swift */; };
+		CE8C2A122C1CC79500ED25C8 /* hbMeasuring.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8C2A112C1CC79500ED25C8 /* hbMeasuring.storyboard */; };
+		CE8C2A142C1CC7C100ED25C8 /* hbMeasuringVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8C2A132C1CC7C100ED25C8 /* hbMeasuringVC.swift */; };
 		CEB319222BFBAA070041B488 /* HRPassDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB319212BFBAA070041B488 /* HRPassDataViewController.swift */; };
 		CEF1AE932C131B3100AA0D7C /* addwidgets.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF1AE922C131B3100AA0D7C /* addwidgets.storyboard */; };
 		CEF1AE972C131C3600AA0D7C /* addwidgetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AE962C131C3600AA0D7C /* addwidgetsViewController.swift */; };
 		CEF1AE9A2C14827300AA0D7C /* widgetsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AE982C14827300AA0D7C /* widgetsCollectionViewCell.swift */; };
 		CEF1AE9B2C14827300AA0D7C /* widgetsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF1AE992C14827300AA0D7C /* widgetsCollectionViewCell.xib */; };
-		CEF1AE9F2C14A7F100AA0D7C /* WidgetKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AE9E2C14A7F100AA0D7C /* WidgetKit.swift */; };
+		CEF1AEE72C1A0D2900AA0D7C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF1AEE62C1A0D2800AA0D7C /* WidgetKit.framework */; };
+		CEF1AEE92C1A0D2900AA0D7C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF1AEE82C1A0D2900AA0D7C /* SwiftUI.framework */; };
+		CEF1AEEC2C1A0D2900AA0D7C /* bpwidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AEEB2C1A0D2900AA0D7C /* bpwidgetsBundle.swift */; };
+		CEF1AEEE2C1A0D2900AA0D7C /* bpwidgetsLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AEED2C1A0D2900AA0D7C /* bpwidgetsLiveActivity.swift */; };
+		CEF1AEF02C1A0D2900AA0D7C /* bpwidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AEEF2C1A0D2900AA0D7C /* bpwidgets.swift */; };
+		CEF1AEF32C1A0D2B00AA0D7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF1AEF22C1A0D2B00AA0D7C /* Assets.xcassets */; };
+		CEF1AEF52C1A0D2B00AA0D7C /* bpwidgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AEF12C1A0D2900AA0D7C /* bpwidgets.intentdefinition */; };
+		CEF1AEF62C1A0D2B00AA0D7C /* bpwidgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AEF12C1A0D2900AA0D7C /* bpwidgets.intentdefinition */; };
+		CEF1AEF92C1A0D2B00AA0D7C /* bpwidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CEF1AEE42C1A0D2800AA0D7C /* bpwidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E0A5F5862BD79B7100413011 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A5F5842BD79B7100413011 /* HistoryTableViewCell.swift */; };
 		E0A5F5872BD79B7100413011 /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0A5F5852BD79B7100413011 /* HistoryTableViewCell.xib */; };
 		E0A5F58B2BD79C9200413011 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A5F58A2BD79C9200413011 /* HistoryVC.swift */; };
@@ -55,6 +66,30 @@
 		E0F7198E2BD1062D00D31F52 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F7198D2BD1062D00D31F52 /* ImageHelper.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CE8C2A062C1C762A00ED25C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0F719662BD0F0C600D31F52 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEF1AEE32C1A0D2800AA0D7C;
+			remoteInfo = bpwidgetsExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CEF1AEFA2C1A0D2B00AA0D7C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CEF1AEF92C1A0D2B00AA0D7C /* bpwidgetsExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		77A3891F2BE6B9BA002C9A95 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		77A389262BE7BFBE002C9A95 /* Reminder.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reminder.storyboard; sourceTree = "<group>"; };
@@ -63,13 +98,24 @@
 		77A3892E2BE7C29C002C9A95 /* UIPageControl+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPageControl+Extension.swift"; sourceTree = "<group>"; };
 		CE6BFDF22C04ADAA00A046EC /* HeartInsightTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartInsightTableViewCell.swift; sourceTree = "<group>"; };
 		CE6BFDF32C04ADAA00A046EC /* HeartInsightTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeartInsightTableViewCell.xib; sourceTree = "<group>"; };
-		CEA7A3F62C0E2D9D003A7858 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		CE8C2A032C1B7D1200ED25C8 /* UIViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewRepresentable.swift; sourceTree = "<group>"; };
+		CE8C2A082C1C818500ED25C8 /* BP Tracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "BP Tracker.entitlements"; sourceTree = "<group>"; };
+		CE8C2A112C1CC79500ED25C8 /* hbMeasuring.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = hbMeasuring.storyboard; sourceTree = "<group>"; };
+		CE8C2A132C1CC7C100ED25C8 /* hbMeasuringVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hbMeasuringVC.swift; sourceTree = "<group>"; };
 		CEB319212BFBAA070041B488 /* HRPassDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRPassDataViewController.swift; sourceTree = "<group>"; };
 		CEF1AE922C131B3100AA0D7C /* addwidgets.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = addwidgets.storyboard; sourceTree = "<group>"; };
 		CEF1AE962C131C3600AA0D7C /* addwidgetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addwidgetsViewController.swift; sourceTree = "<group>"; };
 		CEF1AE982C14827300AA0D7C /* widgetsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = widgetsCollectionViewCell.swift; sourceTree = "<group>"; };
 		CEF1AE992C14827300AA0D7C /* widgetsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = widgetsCollectionViewCell.xib; sourceTree = "<group>"; };
-		CEF1AE9E2C14A7F100AA0D7C /* WidgetKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetKit.swift; sourceTree = "<group>"; };
+		CEF1AEE42C1A0D2800AA0D7C /* bpwidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = bpwidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEF1AEE62C1A0D2800AA0D7C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		CEF1AEE82C1A0D2900AA0D7C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		CEF1AEEB2C1A0D2900AA0D7C /* bpwidgetsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bpwidgetsBundle.swift; sourceTree = "<group>"; };
+		CEF1AEED2C1A0D2900AA0D7C /* bpwidgetsLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bpwidgetsLiveActivity.swift; sourceTree = "<group>"; };
+		CEF1AEEF2C1A0D2900AA0D7C /* bpwidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bpwidgets.swift; sourceTree = "<group>"; };
+		CEF1AEF12C1A0D2900AA0D7C /* bpwidgets.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = bpwidgets.intentdefinition; sourceTree = "<group>"; };
+		CEF1AEF22C1A0D2B00AA0D7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEF1AEF42C1A0D2B00AA0D7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0A5F5842BD79B7100413011 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		E0A5F5852BD79B7100413011 /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
 		E0A5F58A2BD79C9200413011 /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
@@ -108,6 +154,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CEF1AEE12C1A0D2800AA0D7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF1AEE92C1A0D2900AA0D7C /* SwiftUI.framework in Frameworks */,
+				CEF1AEE72C1A0D2900AA0D7C /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E0F7196B2BD0F0C600D31F52 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -155,6 +210,7 @@
 			children = (
 				E0A913C82BD646CC00EB0AEC /* Cells */,
 				E0B7BE652BD2A82000FA1D36 /* HomeVC.swift */,
+				CE8C2A132C1CC7C100ED25C8 /* hbMeasuringVC.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -234,7 +290,6 @@
 			isa = PBXGroup;
 			children = (
 				77A3892B2BE7C046002C9A95 /* Constants.swift */,
-				CEF1AE9E2C14A7F100AA0D7C /* WidgetKit.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -245,6 +300,29 @@
 				E0F719892BD1029D00D31F52 /* OnBoardingCVCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		CEF1AEE52C1A0D2800AA0D7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEF1AEE62C1A0D2800AA0D7C /* WidgetKit.framework */,
+				CEF1AEE82C1A0D2900AA0D7C /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEF1AEEA2C1A0D2900AA0D7C /* bpwidgets */ = {
+			isa = PBXGroup;
+			children = (
+				CEF1AEEB2C1A0D2900AA0D7C /* bpwidgetsBundle.swift */,
+				CEF1AEED2C1A0D2900AA0D7C /* bpwidgetsLiveActivity.swift */,
+				CEF1AEEF2C1A0D2900AA0D7C /* bpwidgets.swift */,
+				CEF1AEF12C1A0D2900AA0D7C /* bpwidgets.intentdefinition */,
+				CEF1AEF22C1A0D2B00AA0D7C /* Assets.xcassets */,
+				CEF1AEF42C1A0D2B00AA0D7C /* Info.plist */,
+				CE8C2A032C1B7D1200ED25C8 /* UIViewRepresentable.swift */,
+			);
+			path = bpwidgets;
 			sourceTree = "<group>";
 		};
 		E0A913C82BD646CC00EB0AEC /* Cells */ = {
@@ -295,6 +373,7 @@
 				E0F7197C2BD0F0C900D31F52 /* LaunchScreen.storyboard */,
 				77A389282BE7BFFB002C9A95 /* Insight.storyboard */,
 				CEF1AE922C131B3100AA0D7C /* addwidgets.storyboard */,
+				CE8C2A112C1CC79500ED25C8 /* hbMeasuring.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -339,8 +418,9 @@
 		E0F719652BD0F0C600D31F52 = {
 			isa = PBXGroup;
 			children = (
-				CEA7A3F62C0E2D9D003A7858 /* MyPlayground.playground */,
 				E0F719702BD0F0C600D31F52 /* BP Tracker */,
+				CEF1AEEA2C1A0D2900AA0D7C /* bpwidgets */,
+				CEF1AEE52C1A0D2800AA0D7C /* Frameworks */,
 				E0F7196F2BD0F0C600D31F52 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -349,6 +429,7 @@
 			isa = PBXGroup;
 			children = (
 				E0F7196E2BD0F0C600D31F52 /* BP Tracker.app */,
+				CEF1AEE42C1A0D2800AA0D7C /* bpwidgetsExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -356,6 +437,7 @@
 		E0F719702BD0F0C600D31F52 /* BP Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				CE8C2A082C1C818500ED25C8 /* BP Tracker.entitlements */,
 				E0B7BE562BD13DCA00FA1D36 /* Application */,
 				77A389222BE6BA17002C9A95 /* Utilities */,
 				77A389172BE6B7A0002C9A95 /* Modules */,
@@ -368,6 +450,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CEF1AEE32C1A0D2800AA0D7C /* bpwidgetsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEF1AEFD2C1A0D2B00AA0D7C /* Build configuration list for PBXNativeTarget "bpwidgetsExtension" */;
+			buildPhases = (
+				CEF1AEE02C1A0D2800AA0D7C /* Sources */,
+				CEF1AEE12C1A0D2800AA0D7C /* Frameworks */,
+				CEF1AEE22C1A0D2800AA0D7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = bpwidgetsExtension;
+			productName = bpwidgetsExtension;
+			productReference = CEF1AEE42C1A0D2800AA0D7C /* bpwidgetsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		E0F7196D2BD0F0C600D31F52 /* BP Tracker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0F719822BD0F0C900D31F52 /* Build configuration list for PBXNativeTarget "BP Tracker" */;
@@ -375,10 +474,12 @@
 				E0F7196A2BD0F0C600D31F52 /* Sources */,
 				E0F7196B2BD0F0C600D31F52 /* Frameworks */,
 				E0F7196C2BD0F0C600D31F52 /* Resources */,
+				CEF1AEFA2C1A0D2B00AA0D7C /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CE8C2A072C1C762A00ED25C8 /* PBXTargetDependency */,
 			);
 			name = "BP Tracker";
 			productName = "BP Tracker";
@@ -392,9 +493,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
+				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					CEF1AEE32C1A0D2800AA0D7C = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
 					E0F7196D2BD0F0C600D31F52 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -414,11 +518,20 @@
 			projectRoot = "";
 			targets = (
 				E0F7196D2BD0F0C600D31F52 /* BP Tracker */,
+				CEF1AEE32C1A0D2800AA0D7C /* bpwidgetsExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CEF1AEE22C1A0D2800AA0D7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF1AEF32C1A0D2B00AA0D7C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E0F7196C2BD0F0C600D31F52 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -430,6 +543,7 @@
 				E0A913D52BD6661900EB0AEC /* InsightCollectionViewCell.xib in Resources */,
 				E0A5F5932BD7D60B00413011 /* HomeCollectionViewCell.xib in Resources */,
 				E0A913CE2BD647DD00EB0AEC /* SettingsTableViewCell.xib in Resources */,
+				CE8C2A122C1CC79500ED25C8 /* hbMeasuring.storyboard in Resources */,
 				CE6BFDF52C04ADAA00A046EC /* HeartInsightTableViewCell.xib in Resources */,
 				E0F719792BD0F0C600D31F52 /* Tabbar.storyboard in Resources */,
 				77A389202BE6B9BA002C9A95 /* Onboarding.storyboard in Resources */,
@@ -443,6 +557,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CEF1AEE02C1A0D2800AA0D7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF1AEF52C1A0D2B00AA0D7C /* bpwidgets.intentdefinition in Sources */,
+				CEF1AEF02C1A0D2900AA0D7C /* bpwidgets.swift in Sources */,
+				CEF1AEEE2C1A0D2900AA0D7C /* bpwidgetsLiveActivity.swift in Sources */,
+				CEF1AEEC2C1A0D2900AA0D7C /* bpwidgetsBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E0F7196A2BD0F0C600D31F52 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -463,13 +588,15 @@
 				E0B7BE5A2BD1582F00FA1D36 /* DisclaimerVC.swift in Sources */,
 				E0A5F5862BD79B7100413011 /* HistoryTableViewCell.swift in Sources */,
 				E0B7BE5C2BD2425500FA1D36 /* UIViewController+Extension.swift in Sources */,
+				CEF1AEF62C1A0D2B00AA0D7C /* bpwidgets.intentdefinition in Sources */,
 				E0A5F58F2BD7C97F00413011 /* CircularCollectionViewLayout.swift in Sources */,
 				E0B7BE5E2BD2553C00FA1D36 /* MeasurementVC.swift in Sources */,
 				E0F719882BD0F1B700D31F52 /* UIView+Extension.swift in Sources */,
+				CE8C2A042C1B7D1200ED25C8 /* UIViewRepresentable.swift in Sources */,
 				E0A913CD2BD647DD00EB0AEC /* SettingsTableViewCell.swift in Sources */,
 				E0F719742BD0F0C600D31F52 /* SceneDelegate.swift in Sources */,
 				E0B7BE622BD29CEE00FA1D36 /* CBTabBarItem.swift in Sources */,
-				CEF1AE9F2C14A7F100AA0D7C /* WidgetKit.swift in Sources */,
+				CE8C2A142C1CC7C100ED25C8 /* hbMeasuringVC.swift in Sources */,
 				CEF1AE972C131C3600AA0D7C /* addwidgetsViewController.swift in Sources */,
 				E0F7198C2BD102C100D31F52 /* OnBoardingVC.swift in Sources */,
 				E0A913D42BD6661900EB0AEC /* InsightCollectionViewCell.swift in Sources */,
@@ -483,6 +610,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE8C2A072C1C762A00ED25C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEF1AEE32C1A0D2800AA0D7C /* bpwidgetsExtension */;
+			targetProxy = CE8C2A062C1C762A00ED25C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E0F719772BD0F0C600D31F52 /* Tabbar.storyboard */ = {
@@ -504,6 +639,60 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CEF1AEFB2C1A0D2B00AA0D7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = bpwidgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = bpwidgets;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ahmadrao.BP-Tracker.bpwidgets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEF1AEFC2C1A0D2B00AA0D7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = bpwidgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = bpwidgets;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ahmadrao.BP-Tracker.bpwidgets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		E0F719802BD0F0C900D31F52 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -621,10 +810,13 @@
 		E0F719832BD0F0C900D31F52 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "BP Tracker/BP Tracker.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "BP Tracker/Application/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -648,10 +840,13 @@
 		E0F719842BD0F0C900D31F52 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "BP Tracker/BP Tracker.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "BP Tracker/Application/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -675,6 +870,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CEF1AEFD2C1A0D2B00AA0D7C /* Build configuration list for PBXNativeTarget "bpwidgetsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF1AEFB2C1A0D2B00AA0D7C /* Debug */,
+				CEF1AEFC2C1A0D2B00AA0D7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E0F719692BD0F0C600D31F52 /* Build configuration list for PBXProject "BP Tracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

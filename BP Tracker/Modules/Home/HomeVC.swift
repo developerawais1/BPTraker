@@ -1,10 +1,3 @@
-//
-//  HomeVC.swift
-//  BP Tracker
-//
-//  Created by Rao Ahmad on 19/04/2024.
-//
-
 import UIKit
 
 class HomeVC: UIViewController {
@@ -20,7 +13,7 @@ class HomeVC: UIViewController {
     func setupCollectionView() {
         homeCollectionView.delegate = self
         homeCollectionView.dataSource = self
-        self.homeCollectionView.register(UINib(nibName: "HomeCollectionViewCell", bundle: nil),forCellWithReuseIdentifier:"HomeCollectionViewCell")
+        self.homeCollectionView.register(UINib(nibName: "HomeCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "HomeCollectionViewCell")
     }
 }
 
@@ -29,35 +22,46 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 4
     }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCollectionViewCell",for: indexPath) as? HomeCollectionViewCell? else {
-            fatalError()
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCollectionViewCell", for: indexPath) as? HomeCollectionViewCell else {
+            fatalError("Could not dequeue cell with identifier: HomeCollectionViewCell")
         }
         switch indexPath.row {
         case 0:
-            cell?.homeCellNameLbl.text = "Blood Pressure"
-            cell?.homeCellCountLbl.text = "150"
-            cell?.homeCellLbl.text = "ml"
-            cell?.homeCellImage.image = UIImage(named: "BloodPressure")
+            cell.homeCellNameLbl.text = "Blood Pressure"
+            cell.homeCellCountLbl.text = "150"
+            cell.homeCellLbl.text = "ml"
+            cell.homeCellImage.image = UIImage(named: "BloodPressure")
         case 1:
-            cell?.homeCellNameLbl.text = "Blood Sugar"
-            cell?.homeCellCountLbl.text = "135"
-            cell?.homeCellLbl.text = "mmol/L"
-            cell?.homeCellImage.image = UIImage(named: "BloodSugar")
+            cell.homeCellNameLbl.text = "Blood Sugar"
+            cell.homeCellCountLbl.text = "135"
+            cell.homeCellLbl.text = "mmol/L"
+            cell.homeCellImage.image = UIImage(named: "BloodSugar")
         case 2:
-            cell?.homeCellNameLbl.text = "Heart Rate"
-            cell?.homeCellCountLbl.text = "110"
-            cell?.homeCellLbl.text = "ml"
-            cell?.homeCellImage.image = UIImage(named: "HeartRate")
+            cell.homeCellNameLbl.text = "Heart Rate"
+            cell.homeCellCountLbl.text = "110"
+            cell.homeCellLbl.text = "ml"
+            cell.homeCellImage.image = UIImage(named: "HeartRate")
         case 3:
-            cell?.homeCellNameLbl.text = "Weight & BMI"
-            cell?.homeCellCountLbl.text = "190"
-            cell?.homeCellLbl.text = "mmol/L"
-            cell?.homeCellImage.image = UIImage(named: "weight")
+            cell.homeCellNameLbl.text = "Weight & BMI"
+            cell.homeCellCountLbl.text = "190"
+            cell.homeCellLbl.text = "mmol/L"
+            cell.homeCellImage.image = UIImage(named: "weight")
         default:
             break
         }
-        return cell ?? UICollectionViewCell()
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case 0:
+            let storyboard = UIStoryboard(name: Storyboards.hbMeasuringVC, bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "hbMeasuringVC")
+            navigationController?.pushViewController(vc, animated: true)
+        default:
+            break
+        }
     }
 }
-

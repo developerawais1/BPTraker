@@ -18,5 +18,6 @@ struct Storyboards {
     static let weight = "weight"
     static let addwidgets = "addwidgets"
     static let SettingsVC = "SettingsVC"
+    static let hbMeasuringVC = "hbMeasuringVC"
 }
 

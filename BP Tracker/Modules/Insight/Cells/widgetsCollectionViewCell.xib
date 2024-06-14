@@ -103,10 +103,10 @@
             </constraints>
             <size key="customSize" width="293" height="321"/>
             <connections>
-                <outlet property="img_widgets" destination="Dh2-kL-dgH" id="2BH-NB-hN8"/>
-                <outlet property="lbl_widgets" destination="82J-E6-eea" id="lJQ-ns-zEm"/>
-                <outlet property="mainView_widgets" destination="ioE-Xz-ZQW" id="Cv1-4D-oWC"/>
-                <outlet property="secMainView" destination="Vlv-IH-5NH" id="MWN-3G-hAM"/>
+                <outlet property="img_view" destination="Dh2-kL-dgH" id="3Bl-Hh-QCo"/>
+                <outlet property="lbl_widgets" destination="82J-E6-eea" id="zO2-cK-uGL"/>
+                <outlet property="mainview_widgets" destination="hFW-Vn-Jwa" id="dpm-JC-ece"/>
+                <outlet property="sec_mainview" destination="ioE-Xz-ZQW" id="ZKv-WN-iOn"/>
             </connections>
             <point key="canvasLocation" x="234" y="53"/>
         </collectionViewCell>
